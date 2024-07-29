@@ -118,10 +118,6 @@ This is an example of a callout with a title.
 This is a warning callout
 :::
 
-::: callout-note
-This is a note callout
-:::
-
 ::: callout-important
 This is a important callout
 :::
@@ -139,6 +135,16 @@ Another fun thing about Quarto is the ability to add comments to your document. 
 You can also turn comments off on specific pages by using the `comments: false` option in the YAML of that specific page!
 
 To use the commenting and highlighting feature used in this qmd, you will need to register for an account with [Hypothes.is](https://web.hypothes.is/).
+
+### Formatting Images
+
+::: {layout="[[1,1], [1]]"}
+![Cat](images/cat1.png){height=400}
+
+![Cat](images/cat2.png){height=400}
+
+![Not a cat](images/cat3.png){width=800}
+:::
 
 
 ## Creating Dashboards
