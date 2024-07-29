@@ -146,6 +146,7 @@ To use the commenting and highlighting feature used in this qmd, you will need t
 ![Not a cat](images/cat3.png){width=800}
 :::
 
+For more [layout options](https://quarto.org/docs/authoring/figures.html#complex-layouts).
 
 ## Creating Dashboards
 
