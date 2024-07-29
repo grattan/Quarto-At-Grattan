@@ -20,6 +20,7 @@ Considered the 'next generation' Rmarkdown.
 -   Seamless integration
 -   Ease of use
 -   More intuitive
+-   Potential of creating dashboards to illustrate statistical analysis undertaken
 
 ### Multi-language Support
 
@@ -104,4 +105,4 @@ penguins |>                                      # <1>
 
 Seamless integration in being able to create [dashboards](https://grattan.github.io/school-ed-2025-primary-maths/).
 
-## Referencing and Citations
+## 
