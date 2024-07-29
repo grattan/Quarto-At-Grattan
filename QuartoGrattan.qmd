@@ -17,9 +17,9 @@ Considered the 'next generation' Rmarkdown.
 
 ## Why Quarto?
 
-* Seamless integration
-* Ease of use
-* More intuitive
+-   Seamless integration
+-   Ease of use
+-   More intuitive
 
 ### Multi-language Support
 
@@ -47,7 +47,6 @@ print("\nMean Age:", mean_age)
 
 #### YAML
 
-
 #### Chunk Options
 
 ```{r}
@@ -63,7 +62,6 @@ mtcars |>
 ```
 
 Referencing plots made is easy, you can use @fig-mtcars to reference the plot above.
-
 
 ### Annotating Code
 
@@ -81,9 +79,9 @@ penguins |>             # <2>
 ```
 
 1.  Load the `palmerpenguins` and `dplyr` libraries.
-2. Choose the data you'd like to work with.
-3. Choosing the variable I'd like to explore
-4. Arrange in ascending order the variable by `flipper_length_mm`.
+2.  Choose the data you'd like to work with.
+3.  Choosing the variable I'd like to explore
+4.  Arrange in ascending order the variable by `flipper_length_mm`.
 
 ```{r}
 #| label: test-code-annotation
@@ -100,16 +98,10 @@ penguins |>                                      # <1>
 
 1.  Take `penguins`, and then,
 2.  Add new columns for the `bill_ratio` and `bill_area`.
-3. Calculate the ratio of `bill_depth_mm` to `bill_length_mm` and the area of the bill.
+3.  Calculate the ratio of `bill_depth_mm` to `bill_length_mm` and the area of the bill.
 
 ## Creating Dashboards
 
 Seamless integration in being able to create [dashboards](https://grattan.github.io/school-ed-2025-primary-maths/).
 
-
 ## Referencing and Citations
-
-
-
-
-
