@@ -1,19 +1,20 @@
 ---
-title: "Benefits of Quarto"
+title: "Benefits of Quarto 💡"
 format: html
 editor: visual
 code-annotations: hover
+theme: cosmo
 toc: true
 execute:
   message: false
   warning: false
+comments:
+  hypothesis: true
 ---
 
 ## What is Quarto?
 
-Quarto is a document format that allows you to write in markdown and include code blocks that can be executed. This allows you to write and run code in the same document, and then display the results in the final document.
-
-Considered the 'next generation' Rmarkdown.
+"Quarto is a multi-language, next generation version of R Markdown from Posit, with many new new features and capabilities. Like R Markdown, Quarto uses knitr to execute R code, and is therefore able to render most existing Rmd files [without modification](https://quarto.org/)."
 
 ## Why Quarto?
 
@@ -44,14 +45,12 @@ print("\nMean Age:", mean_age)
 
 ```
 
-### More Intuitive and Streamlined
-
-#### YAML
 
 #### Chunk Options
 
 ```{r}
 #| label: fig-mtcars
+#| echo: fenced
 #| fig-cap: "A plot of the mtcars dataset"
 
 library(ggplot2)
@@ -68,7 +67,6 @@ Referencing plots made is easy, you can use @fig-mtcars to reference the plot ab
 
 ```{r}
 #| label: penguin-analysis
-#| echo: fenced
 #| eval: false
 library(palmerpenguins) # <1>
 library(dplyr)          # <1>
@@ -86,7 +84,6 @@ penguins |>             # <2>
 
 ```{r}
 #| label: test-code-annotation
-#| echo: fenced
 #| eval: false
 library(tidyverse)
 library(palmerpenguins)
@@ -101,8 +98,49 @@ penguins |>                                      # <1>
 2.  Add new columns for the `bill_ratio` and `bill_area`.
 3.  Calculate the ratio of `bill_depth_mm` to `bill_length_mm` and the area of the bill.
 
+## Creating Captivating Stand Alone Documents
+
+### Callouts
+
+-   Using callouts to highlight important information and break up text
+
+::: callout-note
+Note that there are five types of callouts, including: `note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: callout-tip
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+::: callout-warning
+This is a warning callout
+:::
+
+::: callout-note
+This is a note callout
+:::
+
+::: callout-important
+This is a important callout
+:::
+
+::: {.callout-caution collapse="true"}
+## Collapse Call Outs
+
+Allows you to add more information that is valuable, but may not need to be taking space in the document. `collapse="false"` will show the content by default.
+:::
+
+### Commenting and Highlighting
+
+Another fun thing about Quarto is the ability to add comments to your document. This can be done using the `comments` option in the YAML front matter. 
+
+You can also turn comments off on specific pages by using the `comments: false` option in the YAML of that specific page!
+
+To use the commenting and highlighting feature used in this qmd, you will need to register for an account with [Hypothes.is](https://web.hypothes.is/).
+
+
 ## Creating Dashboards
 
-Seamless integration in being able to create [dashboards](https://grattan.github.io/school-ed-2025-primary-maths/).
-
-## 
+Seamless integration in being able to create [blogs](https://grattan.github.io/school-ed-2025-primary-maths/).
