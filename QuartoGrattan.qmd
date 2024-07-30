@@ -1,6 +1,12 @@
 ---
 title: "Benefits of Quarto 💡"
-format: html
+format: 
+  html:
+    other-links:
+      - text: FAQ for Quarto
+        href: https://quarto.org/docs/faq/
+      - text: Quarto Guide
+        href: https://quarto.org/docs/guide/
 editor: visual
 code-annotations: hover
 theme: cosmo
@@ -23,7 +29,30 @@ comments:
 -   More intuitive
 -   Potential of creating dashboards to illustrate statistical analysis undertaken
 
+## Setting Up Quarto
+
+To get started with Quarto, you will need to **install Quarto**. You can do this by [here](https://quarto.org/docs/get-started/).
+
+Once you have installed the Quarto, you can create a new Quarto document by:
+
+1.  Go to the File menu in RStudio
+
+2.  Select New `File` \> `New File` \> `Quarto Document`
+
+![](images/select_new.png){width="307" fig-align="center"}
+
+3.  Choose the document type: `Document`, `Presentation`, or `Interactive`.
+
+![](images/document_type.png){width="347" fig-align="center"}
+
+::: callout-note
+A Quarto file is a plain text file with the extension `.qmd`.
+:::
+
+
 ### Multi-language Support
+
+The principal languages supported by Quarto are Python, R, Julia, and Observable JavaScript. 
 
 ```{python}
 
@@ -128,13 +157,34 @@ This is a important callout
 Allows you to add more information that is valuable, but may not need to be taking space in the document. `collapse="false"` will show the content by default.
 :::
 
+### Interactive ways to break up documents
+
+::: {.panel-tabset group="Perspectives"}
+## Sweave
+**Sweave** was one of the first tools for literate programming in R, allowing users to embed R code in LaTeX documents.
+
+
+## R Markdown
+
+**R Markdown** is a modern alternative to Sweave, integrating text and R code to produce different outputs such as HTML, PDF, and Word, not *just LaTeX.*
+:::
+
+
+
+
 ### Commenting and Highlighting
 
 Another fun thing about Quarto is the ability to add comments to your document. This can be done using the `comments` option in the YAML front matter. 
 
 You can also turn comments off on specific pages by using the `comments: false` option in the YAML of that specific page!
 
-To use the commenting and highlighting feature used in this qmd, you will need to register for an account with [Hypothes.is](https://web.hypothes.is/).
+To use the commenting and highlighting feature used in this qmd, you will need to register for an account with [Hypothes.is](https://web.hypothes.is/). 
+
+::: callout-tip
+`hypothes.is` is one of the commenting features you can use, for more view [here](https://quarto.org/docs/reference/projects/websites.html#utterances).
+:::
+
+This feature can be used on [published](https://quarto.org/docs/publishing/) and private Quarto documents.
 
 ### Formatting Images
 

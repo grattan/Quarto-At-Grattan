@@ -86,7 +86,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link active" data-scroll-target="#what-is-quarto">What is Quarto?</a></li>
-  <li><a href="#why-quarto" id="toc-why-quarto" class="nav-link" data-scroll-target="#why-quarto">Why Quarto?</a>
+  <li><a href="#why-quarto" id="toc-why-quarto" class="nav-link" data-scroll-target="#why-quarto">Why Quarto?</a></li>
+  <li><a href="#setting-up-quarto" id="toc-setting-up-quarto" class="nav-link" data-scroll-target="#setting-up-quarto">Setting Up Quarto</a>
   <ul class="collapse">
   <li><a href="#multi-language-support" id="toc-multi-language-support" class="nav-link" data-scroll-target="#multi-language-support">Multi-language Support</a></li>
   <li><a href="#annotating-code" id="toc-annotating-code" class="nav-link" data-scroll-target="#annotating-code">Annotating Code</a></li>
@@ -94,12 +95,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#creating-captivating-stand-alone-documents" id="toc-creating-captivating-stand-alone-documents" class="nav-link" data-scroll-target="#creating-captivating-stand-alone-documents">Creating Captivating Stand Alone Documents</a>
   <ul class="collapse">
   <li><a href="#callouts" id="toc-callouts" class="nav-link" data-scroll-target="#callouts">Callouts</a></li>
+  <li><a href="#interactive-ways-to-break-up-documents" id="toc-interactive-ways-to-break-up-documents" class="nav-link" data-scroll-target="#interactive-ways-to-break-up-documents">Interactive ways to break up documents</a></li>
   <li><a href="#commenting-and-highlighting" id="toc-commenting-and-highlighting" class="nav-link" data-scroll-target="#commenting-and-highlighting">Commenting and Highlighting</a></li>
   <li><a href="#formatting-images" id="toc-formatting-images" class="nav-link" data-scroll-target="#formatting-images">Formatting Images</a></li>
   </ul></li>
   <li><a href="#creating-dashboards" id="toc-creating-dashboards" class="nav-link" data-scroll-target="#creating-dashboards">Creating Dashboards</a></li>
   </ul>
-</nav>
+<div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://quarto.org/docs/faq/"><i class="bi bi-link-45deg"></i>FAQ for Quarto</a></li><li><a href="https://quarto.org/docs/guide/"><i class="bi bi-link-45deg"></i>Quarto Guide</a></li></ul></div></nav>
 </div>
 <main class="content" id="quarto-document-content">
 
@@ -134,8 +136,44 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>More intuitive</li>
 <li>Potential of creating dashboards to illustrate statistical analysis undertaken</li>
 </ul>
+</section>
+<section id="setting-up-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="setting-up-quarto">Setting Up Quarto</h2>
+<p>To get started with Quarto, you will need to <strong>install Quarto</strong>. You can do this by <a href="https://quarto.org/docs/get-started/">here</a>.</p>
+<p>Once you have installed the Quarto, you can create a new Quarto document by:</p>
+<ol type="1">
+<li><p>Go to the File menu in RStudio</p></li>
+<li><p>Select New <code>File</code> &gt; <code>New File</code> &gt; <code>Quarto Document</code></p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/select_new.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="307"></p>
+</figure>
+</div>
+<ol start="3" type="1">
+<li>Choose the document type: <code>Document</code>, <code>Presentation</code>, or <code>Interactive</code>.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/document_type.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="347"></p>
+</figure>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A Quarto file is a plain text file with the extension <code>.qmd</code>.</p>
+</div>
+</div>
 <section id="multi-language-support" class="level3">
 <h3 class="anchored" data-anchor-id="multi-language-support">Multi-language Support</h3>
+<p>The principal languages supported by Quarto are Python, R, Julia, and Observable JavaScript.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
@@ -309,7 +347,7 @@ Important
 </div>
 </div>
 <div class="callout callout-style-default callout-caution callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -318,9 +356,23 @@ Collapse Call Outs
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Allows you to add more information that is valuable, but may not need to be taking space in the document. <code>collapse="false"</code> will show the content by default.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="interactive-ways-to-break-up-documents" class="level3">
+<h3 class="anchored" data-anchor-id="interactive-ways-to-break-up-documents">Interactive ways to break up documents</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset" data-group="Perspectives">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Sweave</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">R Markdown</a></li></ul>
+<div class="tab-content" data-group="Perspectives">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><strong>Sweave</strong> was one of the first tools for literate programming in R, allowing users to embed R code in LaTeX documents.</p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>R Markdown</strong> is a modern alternative to Sweave, integrating text and R code to produce different outputs such as HTML, PDF, and Word, not <em>just LaTeX.</em></p>
 </div>
 </div>
 </div>
@@ -330,6 +382,20 @@ Collapse Call Outs
 <p>Another fun thing about Quarto is the ability to add comments to your document. This can be done using the <code>comments</code> option in the YAML front matter.</p>
 <p>You can also turn comments off on specific pages by using the <code>comments: false</code> option in the YAML of that specific page!</p>
 <p>To use the commenting and highlighting feature used in this qmd, you will need to register for an account with <a href="https://web.hypothes.is/">Hypothes.is</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><code>hypothes.is</code> is one of the commenting features you can use, for more view <a href="https://quarto.org/docs/reference/projects/websites.html#utterances">here</a>.</p>
+</div>
+</div>
+<p>This feature can be used on <a href="https://quarto.org/docs/publishing/">published</a> and private Quarto documents.</p>
 </section>
 <section id="formatting-images" class="level3">
 <h3 class="anchored" data-anchor-id="formatting-images">Formatting Images</h3>
