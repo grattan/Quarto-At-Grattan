@@ -81,6 +81,8 @@ print("\nMean Age:", mean_age)
 #| label: fig-mtcars
 #| echo: fenced
 #| fig-cap: "A plot of the mtcars dataset"
+#| fig-subcap:
+#|  - "Relationship between mpg and wt"
 
 library(ggplot2)
 
@@ -197,6 +199,12 @@ This feature can be used on [published](https://quarto.org/docs/publishing/) and
 :::
 
 For more [layout options](https://quarto.org/docs/authoring/figures.html#complex-layouts).
+
+
+::: callout-note
+# Hover Option
+Hover option for cross-referencing makes it easier for readers to quickly glance at the figure at later points in the report, i.e. @fig-mtcars. 
+:::
 
 ## Creating Dashboards
 
