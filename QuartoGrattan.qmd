@@ -24,10 +24,18 @@ comments:
 
 ## Why Quarto?
 
--   Seamless integration
+-   Seamless integration 
 -   Ease of use
--   More intuitive
+-   More intuitive than using R Markdown or even R scripts.
 -   Potential of creating dashboards to illustrate statistical analysis undertaken
+
+## Use Cases for Grattan
+
+Version control, reproducibility in code, sharing work efficiently with your team and passing work on to others.
+
+* Seamless integration in being able to create [blogs](https://grattan.github.io/school-ed-2025-primary-maths/).
+* PISA analysis: QC, VC, adaptability. 
+* [Grattan R Guide](https://grattan.github.io/R_at_Grattan/). Instead of requiring bookdown here, we could directly use Quarto.
 
 ## Setting Up Quarto
 
@@ -206,6 +214,6 @@ For more [layout options](https://quarto.org/docs/authoring/figures.html#complex
 Hover option for cross-referencing makes it easier for readers to quickly glance at the figure at later points in the report, i.e. @fig-mtcars. 
 :::
 
-## Creating Dashboards
+## Nick's (fantastic) blog using Quarto
 
 Seamless integration in being able to create [blogs](https://grattan.github.io/school-ed-2025-primary-maths/).
